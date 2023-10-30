@@ -1,0 +1,165 @@
+{
+    "reservas": [
+      {
+        "id": 1,
+        "descricao": "Aula de FrameWorks",
+        "solicitante": "José da Silva",
+        "sala": "Laboratório de Informática 1",
+        "dataInicial": "25/10/2023 ás 19:00:00",
+        "dataFinal": "25/10/2023 ás 20:00:00"
+      },
+      {
+        "id": 2,
+        "descricao": "Reunião de Equipe",
+        "solicitante": "Ana Pereira",
+        "sala": "Sala de Reuniões 3",
+        "dataInicial": "26/10/2023 ás 14:00:00",
+        "dataFinal": "26/10/2023 ás 15:00:00"
+      },
+      {
+        "id": 3,
+        "descricao": "Treinamento de Segurança",
+        "solicitante": "Rafael Barbosa",
+        "sala": "Auditório",
+        "dataInicial": "27/10/2023 ás 10:00:00",
+        "dataFinal": "27/10/2023 ás 12:00:00"
+      },
+      {
+        "id": 4,
+        "descricao": "Entrevista de Emprego",
+        "solicitante": "Maria Oliveira",
+        "sala": "Sala de Reuniões 1",
+        "dataInicial": "28/10/2023 ás 15:30:00",
+        "dataFinal": "28/10/2023 ás 16:30:00"
+      },
+      {
+        "id": 5,
+        "descricao": "Oficina de Design Gráfico",
+        "solicitante": "Luiz Ferreira",
+        "sala": "Sala de Treinamento 2",
+        "dataInicial": "29/10/2023 ás 09:00:00",
+        "dataFinal": "29/10/2023 ás 12:00:00"
+      },
+      {
+        "id": 6,
+        "descricao": "Reunião de Projeto",
+        "solicitante": "Fernanda Santos",
+        "sala": "Sala de Reuniões 2",
+        "dataInicial": "30/10/2023 ás 11:00:00",
+        "dataFinal": "30/10/2023 ás 12:30:00"
+      },
+      {
+        "id": 7,
+        "descricao": "Apresentação de Vendas",
+        "solicitante": "Carlos Lima",
+        "sala": "Auditório",
+        "dataInicial": "31/10/2023 ás 15:00:00",
+        "dataFinal": "31/10/2023 ás 17:00:00"
+      },
+      {
+        "id": 8,
+        "descricao": "Workshop de Programação",
+        "solicitante": "Mariana Gonçalves",
+        "sala": "Laboratório de Informática 2",
+        "dataInicial": "01/11/2023 ás 10:30:00",
+        "dataFinal": "01/11/2023 ás 12:30:00"
+      },
+      {
+        "id": 9,
+        "descricao": "Sessão de Testes",
+        "solicitante": "Gustavo Santos",
+        "sala": "Laboratório de Testes",
+        "dataInicial": "02/11/2023 ás 14:30:00",
+        "dataFinal": "02/11/2023 ás 16:00:00"
+      },
+      {
+        "id": 10,
+        "descricao": "Treinamento de RH",
+        "solicitante": "Camila Alves",
+        "sala": "Sala de Treinamento 1",
+        "dataInicial": "03/11/2023 ás 09:30:00",
+        "dataFinal": "03/11/2023 ás 11:30:00"
+      },
+      {
+        "id": 11,
+        "descricao": "Apresentação de Produto",
+        "solicitante": "Pedro Ribeiro",
+        "sala": "Auditório",
+        "dataInicial": "04/11/2023 ás 16:00:00",
+        "dataFinal": "04/11/2023 ás 17:30:00"
+      },
+      {
+        "id": 12,
+        "descricao": "Reunião de Departamento",
+        "solicitante": "Cristina Santos",
+        "sala": "Sala de Reuniões 4",
+        "dataInicial": "05/11/2023 ás 10:00:00",
+        "dataFinal": "05/11/2023 ás 11:00:00"
+      },
+      {
+        "id": 13,
+        "descricao": "Treinamento de Vendas",
+        "solicitante": "Roberto Mendes",
+        "sala": "Sala de Treinamento 3",
+        "dataInicial": "06/11/2023 ás 14:00:00",
+        "dataFinal": "06/11/2023 ás 16:00:00"
+      },
+      {
+        "id": 14,
+        "descricao": "Entrevista de Estágio",
+        "solicitante": "Juliana Ferreira",
+        "sala": "Sala de Reuniões 1",
+        "dataInicial": "07/11/2023 ás 11:30:00",
+        "dataFinal": "07/11/2023 ás 12:30:00"
+      },
+      {
+        "id": 15,
+        "descricao": "Workshop de Marketing",
+        "solicitante": "Daniel Oliveira",
+        "sala": "Auditório",
+        "dataInicial": "08/11/2023 ás 15:30:00",
+        "dataFinal": "08/11/2023 ás 17:30:00"
+      },
+      {
+        "id": 16,
+        "descricao": "Reunião de Equipe",
+        "solicitante": "Aline Barbosa",
+        "sala": "Sala de Reuniões 2",
+        "dataInicial": "09/11/2023 ás 09:00:00",
+        "dataFinal": "09/11/2023 ás 10:00:00"
+      },
+      {
+        "id": 17,
+        "descricao": "Apresentação de Projetos",
+        "solicitante": "Lucas Silva",
+        "sala": "Sala de Reuniões 3",
+        "dataInicial": "10/11/2023 ás 16:30:00",
+        "dataFinal": "10/11/2023 ás 17:30:00"
+      },
+      {
+        "id": 18,
+        "descricao": "Treinamento de Desenvolvimento Pessoal",
+        "solicitante": "Fernanda Lima",
+        "sala": "Sala de Treinamento 1",
+        "dataInicial": "11/11/2023 ás 09:30:00",
+        "dataFinal": "11/11/2023 ás 11:30:00"
+      },
+      {
+        "id": 19,
+        "descricao": "Reunião de Gerentes",
+        "solicitante": "João Santos",
+        "sala": "Sala de Reuniões 4",
+        "dataInicial": "12/11/2023 ás 10:00:00",
+        "dataFinal": "12/11/2023 ás 11:00:00"
+      },
+      {
+        "id": 20,
+        "descricao": "Sessão de Testes",
+        "solicitante": "Carla Ribeiro",
+        "sala": "Laboratório de Testes",
+        "dataInicial": "13/11/2023 ás 14:30:00",
+        "dataFinal": "13/11/2023 ás 16:00:00"
+      }
+    ]
+  }
+  
