@@ -1,0 +1,14 @@
+.header{
+    background-color: rgb(26, 35, 112);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.titulo{
+    justify-content: start;
+    flex-direction: row;
+    font-size: 21px;
+}
