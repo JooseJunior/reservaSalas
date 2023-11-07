@@ -1,22 +1,22 @@
-.main{
+.body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-.body{
+.main{
     flex-grow: 1;
     display: flex;
     flex-direction: row;
 }
 
-.bodyFormulario{
+.mainFormulario{
     width: 30%;
     background: rgb(192, 190, 190);
     border: 1px solid black;
   }
   
-.bodyTabela{
+.mainTabela{
     width: 70%;
     background: rgb(228, 213, 213);
     border: 1px solid black;

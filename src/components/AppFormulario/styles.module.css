@@ -1,9 +1,29 @@
 .bodyFormulario{
-  padding: 10px;
+  margin: 10px;
 }
 .bodyFormTitulo{
-
+  margin: 7px 0px;
 }
+
+.bodyFormMensagem{
+  padding: 7px 0px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
 .bodyFormInfo{
   
+}
+
+.inputs{
+  margin: 7px 0px;
+}
+
+.botao{
+  width: 100%;
+  padding: 7px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }

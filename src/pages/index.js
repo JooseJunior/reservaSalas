@@ -23,23 +23,23 @@ export default function Home() {
       </Head>
 
 
-      <main className={styles.main}>
+      <body className={styles.body}>
         <Cabecalho titulo={"Reserva de Salas"}/>
         
-        <body className={styles.body}>
+        <main className={styles.main}>
 
-          <div className={styles.bodyFormulario}>
+          <div className={styles.mainFormulario}>
             <AppFormulario />
           </div>
 
-          <div className={styles.bodyTabela}>
+          <div className={styles.mainTabela}>
             <AppTabela />
           </div>
           
-        </body>
+        </main>
 
         <Rodape/>
-      </main>
+      </body>
 
     </>
   )

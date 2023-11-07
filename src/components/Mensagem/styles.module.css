@@ -1,0 +1,47 @@
+.container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilização das Classes */
+.caixa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* border: solid 1px var(--cor-primaria); */
+    /* border-radius: 10px; */
+    /* color: var(--cor-preto); */
+
+    font-family: var(--font-primaria);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    
+    width: 500px;
+    height: 50px;
+}
+
+.success {
+    background: #28A34D;
+    color: white;
+}
+
+.info {
+    background: #318BBA;
+    color: white;
+}
+
+.error {
+    background: #D43939;
+    color: white;
+}
+
+.warning {
+    background: #F5A623;
+    color: #474745;
+}
