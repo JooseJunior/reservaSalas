@@ -23,7 +23,7 @@ export default function Home() {
       </Head>
 
 
-      <body className={styles.body}>
+      <div className={styles.body}>
         <Cabecalho titulo={"Reserva de Salas"}/>
         
         <main className={styles.main}>
@@ -39,7 +39,7 @@ export default function Home() {
         </main>
 
         <Rodape/>
-      </body>
+      </div>
 
     </>
   )

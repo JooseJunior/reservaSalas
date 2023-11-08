@@ -3,12 +3,14 @@
 }
 .bodyFormTitulo{
   margin: 7px 0px;
+  display: flex;
+  flex-direction: row;
 }
 
 .bodyFormMensagem{
   padding: 7px 0px;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 0px;
   padding: 5px;
 }
 

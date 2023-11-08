@@ -1,19 +1,60 @@
-.button{
-    background-color: rgb(0, 64, 182);
-    color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 3px;
-    padding: 5px 10px;
-    /* margin: 5px; */
-    display: inline-block;
-    text-decoration: none;
-    transition: background-color 0.2s, transform 0.2s;
-    width: 90.9%;
+.bodyFormulario{
+    margin: 10px;
   }
-  
 
-.button:hover{
-    transform: scale(1.1);
-    background-color: rgb(30, 30, 255);
+.bodyFormTitulo{
+    margin: 7px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.bodyFormInfo{
+    display: flex;
+    /* text-align: center; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.table {
+    border-collapse: collapse;
+    align-items: center;
+    overflow-y: scroll;
+    /* max-width: 98%; */
+}
+.thead{
+    border-collapse: collapse;
+    background-color: #26508c;
+    color: white;
+    width: 100%;
+    height: 30px;
+    border: 1px solid black;
+}
+.table th{
+    border: 1px solid black;
+}
+.thead th{
+    width: 100vh;
+}
+.thead th{
+    width: 100vh;
+}
+.tbody td {
+    border: 1px solid black;
+    padding: 1px 2px;
+}
+
+.tbody tr:hover{
+    background-color: #1265d8;
+    cursor: pointer;
+}
+
+/* Deixar a tabela zebrada */
+.tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Deixar o hover pegar a parte zebrada */
+.tbody tr:nth-child(even):hover {
+    background-color: #1265d8;
     cursor: pointer;
 }

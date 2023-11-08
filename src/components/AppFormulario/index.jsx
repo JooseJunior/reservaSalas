@@ -8,6 +8,7 @@ import Button from "../Button"
 import { useState } from "react"
 import { useRouter } from "next/router"
 import Mensagem from "../Mensagem"
+import axios from 'axios'
 
 export default function AppFormulario({}){
     
@@ -110,9 +111,9 @@ export default function AppFormulario({}){
 
             <div className={styles.bodyFormMensagem}>
                 <Mensagem
-                    mensagem={""}
-                    tipo={"success"}
-                    ativo={false}
+                    texto={`${mensagem.texto}`}
+                    tipo={`${mensagem.tipo}`}
+                    ativo={`${mensagem.ativo}`}
                 />
             </div>
             
