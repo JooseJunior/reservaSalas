@@ -175,7 +175,7 @@ export default function AppFormulario({}){
                     <div className={styles.inputs}>
                         <Label>
                             <input id='termos' name='termos' type='checkbox' checked={reserva.termos}
-                                onChange={e => setReserva({...reserva, termos: e.target.value})}
+                                onChange={e => setReserva({...reserva, termos: e.target.checked})}
                                 // onChange={(e) => setTermos(e.target.checked)}
                             />
                             Concordo com os termos?

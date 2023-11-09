@@ -32,7 +32,7 @@ export default function AppTabela({}){
         <div className={styles.bodyFormulario}>
             <div className={styles.bodyFormTitulo}>
                 <img/>
-                <h3>Reservas realizadas: {reserva.length}</h3>
+                <h3>📅 Reservas realizadas: {reserva.length}</h3>
             </div>
 
             <div className={styles.bodyFormInfo}>
