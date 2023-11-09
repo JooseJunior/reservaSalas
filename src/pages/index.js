@@ -9,10 +9,12 @@ import Label from '@/components/Label'
 import TextArea from '@/components/TextArea'
 import AppFormulario from '@/components/AppFormulario'
 import AppTabela from '@/components/AppTabela'
+import axios from 'axios'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -29,11 +31,11 @@ export default function Home() {
         <main className={styles.main}>
 
           <div className={styles.mainFormulario}>
-            <AppFormulario />
+            <AppFormulario/>
           </div>
 
           <div className={styles.mainTabela}>
-            <AppTabela />
+            <AppTabela/>
           </div>
           
         </main>

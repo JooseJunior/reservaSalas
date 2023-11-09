@@ -24,68 +24,79 @@ export default function AppFormulario({}){
     const router = useRouter()
 
     // const [termos, setTermos] = useState(false);
+    
+    const [mensagem, setMensagem] = useState("");
+    const [tipo, setTipo] = useState("");
+    const [ativo, setAtivo] = useState(false);
 
-    // const [mensagem, setMensagem] = useState("");
-    // const [tipo, setTipo] = useState("");
-    // const [ativo, setAtivo] = useState(false);
+    // const [mensagem, setMensagem] = useState({
+    //     texto:"",
+    //     tipo:"",
+    //     ativo: false
+    // });
 
-    const [mensagem, setMensagem] = useState({
-        texto:"",
-        tipo:"",
-        ativo: false
-    });
 
     async function cadastrarReserva(e){
 
         e.preventDefault()
         
         //Validações
-        if (reserva.termos == false) {
-            setMensagem({
-                texto: "Concorde com os termos para continuar!",
-                tipo: "warning",
-                ativo: true
-            })
-            return
+        if (reserva.dataInicial > reserva.dataFinal ) {
+            setMensagem("Data Inicial maior que Data Final!")
+            setTipo("warning")
+            setAtivo(true)
 
-            // setMensagem("Concorde com os termos para continuar!")
-            // setTipo("warning")
-            // setAtivo(true)
-            // return
+            // setMensagem({
+            //     texto: "Data Inicial maior que Data Final!",
+            //     tipo: "warning",
+            //     ativo: true
+            // })
+            return
         }
 
-        if (reserva.dataInicial > reserva.dataFinal ) {
-            setMensagem({
-                texto: "Data Inicial maior que Data Final!",
-                tipo: "warning",
-                ativo: true
-            })
-            return
+        if (reserva.termos == false) {
+            setMensagem("Concorde com os termos para continuar!")
+            setTipo("warning")
+            setAtivo(true)
 
-            // setMensagem("Data Inicial maior que Data Final!")
-            // setTipo("warning")
-            // setAtivo(true)
-            // return
-          }
+            // setMensagem({
+            //     texto: "Concorde com os termos para continuar!",
+            //     tipo: "warning",
+            //     ativo: true
+            // })
+            return
+        }
 
         //Gravação no Banco
         axios.post('http://localhost:3001/reservas', reserva)
             .then(resultado => {
                 console.log(resultado.data);
-                setMensagem({
-                    texto: "Agendamento realizado com sucesso!",
-                    tipo: "success",
-                    ativo: true
-                })
-                limparReserva();  
+                setMensagem("Agendamento realizado com sucesso!")
+                setTipo("success")
+                setAtivo(true)
+
+                // setMensagem({
+                //     texto: "Agendamento realizado com sucesso!",
+                //     tipo: "success",
+                //     ativo: true
+                // })
+                
+                window.location.reload(); //Atualizar a página para listarReservar
+                
+                limparReserva();
+
             })
             .catch(error => {
                 // console.log(error);
-                setMensagem({
-                    texto: "Falha ao realizar agendamento!",
-                    tipo: "warning",
-                    ativo: true
-                })
+                setMensagem("Falha ao realizar agendamento!")
+                setTipo("warning")
+                setAtivo(true)
+
+                // setMensagem({
+                //     texto: "Falha ao realizar agendamento!",
+                //     tipo: "warning",
+                //     ativo: true
+                // })
             })
 
         //Limpar o Formulário
@@ -109,33 +120,35 @@ export default function AppFormulario({}){
                 <h3>Reservar sala</h3>
             </div>
 
-            <div className={styles.bodyFormMensagem}>
-                <Mensagem
-                    texto={`${mensagem.texto}`}
-                    tipo={`${mensagem.tipo}`}
-                    ativo={`${mensagem.ativo}`}
-                />
-            </div>
+            <Mensagem
+                // texto={`${mensagem.texto}`}
+                // tipo={`${mensagem.tipo}`}
+                // ativo={`${mensagem.ativo}`}
+
+                texto={`${mensagem}`}
+                tipo={`${tipo}`}
+                ativo={`${ativo}`}
+            />
             
             <form onSubmit={e => cadastrarReserva(e)}>
                 <div className={styles.bodyFormInfo}>
                     <div className={styles.inputs}>
                         <Label>Descrição</Label>
-                        <TextArea id='descricao' name='descricao' type='text' value={reserva.descricao}
+                        <TextArea id='descricao' name='descricao' type='text' required value={reserva.descricao}
                             onChange={e => setReserva({...reserva, descricao: e.target.value})}
                         />
                     </div>
 
                     <div className={styles.inputs}>
                         <Label>Solicitante</Label>
-                        <Input id='solicitante' name='solicitante' type='text' value={reserva.solicitante}
+                        <Input id='solicitante' name='solicitante' type='text' required value={reserva.solicitante}
                             onChange={e => setReserva({...reserva, solicitante: e.target.value})}
                         />
                     </div>
 
                     <div className={styles.inputs}>
                         <Label>Sala</Label>
-                        <Select id='datainicial' name='datainicial' type='datetime-local' value={reserva.sala}
+                        <Select id='datainicial' name='datainicial' type='datetime-local' required value={reserva.sala}
                             onChange={e => setReserva({...reserva, sala: e.target.value})}
                         >
                             <option value='Bloco A'>Bloco A - Laboratório Informática</option>
@@ -147,14 +160,14 @@ export default function AppFormulario({}){
 
                     <div className={styles.inputs}>
                         <Label>Início</Label>
-                        <Input id='datainicial' name='datainicial' type='datetime-local' value={reserva.dataInicial}
+                        <Input id='datainicial' name='datainicial' type='datetime-local' required value={reserva.dataInicial}
                             onChange={e => setReserva({...reserva, dataInicial: e.target.value})}
                         />
                     </div>
 
                     <div className={styles.inputs}>
                         <Label>Fim</Label>
-                        <Input id='datafinal' name='datafinal' type='datetime-local' value={reserva.dataFinal}
+                        <Input id='datafinal' name='datafinal' type='datetime-local' required value={reserva.dataFinal}
                             onChange={e => setReserva({...reserva, dataFinal: e.target.value})}
                         />
                     </div>

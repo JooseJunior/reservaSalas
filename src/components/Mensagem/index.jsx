@@ -13,13 +13,13 @@ export default function Mensagem({texto, tipo, ativo}){
 
     return(
         <>
-        {ativo === true ? (
+        {ativo == "true" ? (
             <>
-            <div className={styles.container}>
-                <div className={classes}>
-                    <p>{texto}</p>
+                <div className={styles.container}>
+                    <div className={classes}>
+                        <p>{texto}</p>
+                    </div>
                 </div>
-            </div>
             </>
         ):(
             <>

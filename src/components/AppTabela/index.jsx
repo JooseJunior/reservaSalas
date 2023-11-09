@@ -7,10 +7,13 @@ export default function AppTabela({}){
     const [reserva, setReserva] = useState([]);
 
     useEffect(() => {
+        listarReservas();
+    }, [])
+    
+    function listarReservas(){
         axios.get('http://localhost:3001/reservas')
             .then(resultado => setReserva(resultado.data))
-    }, [])
-
+    }
 
     function formatarData(data) {
         const dataFormatada = new Date(data)
